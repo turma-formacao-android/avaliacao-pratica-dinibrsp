@@ -12,5 +12,53 @@
         android:gravity="left|center"
         android:hint="@string/lbl_name"
         />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/editTextCep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="left|center"
+        android:hint="@string/lbl_cep"
+        />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="left|center"
+        android:hint="@string/lbl_check"
+        />
+</LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:hint="@string/lbl_tel"
+        />
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:hint="@string/lbl_mail"
+        />
+
+    <EditText
+        android:id="@+id/editTextSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:hint="@string/lbl_social"
+        />
+
 
 </LinearLayout>
