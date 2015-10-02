@@ -71,4 +71,20 @@ public final class AgendaReposiroty {
         databaseHelper.close();
         return values;
     }
+
+
+    public static Agenda getId(Long id) {
+        DatabaseHelper databaseHelper = DatabaseHelper.getInstance();
+        SQLiteDatabase db = databaseHelper.getReadableDatabase();
+
+        String where = AgendaContract.ID + " = ?";
+        String[] params = {String.valueOf(id)};
+
+        Cursor cursor = db.query(AgendaContract.TABLE, AgendaContract.COLUNS, where, params, null, null, AgendaContract.ID);
+        Agenda agenda = AgendaContract.getAgenda(cursor);
+        db.close();
+        databaseHelper.close();
+
+        return agenda;
+    }
 }

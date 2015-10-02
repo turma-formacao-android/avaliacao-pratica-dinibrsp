@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import br.com.cast.turmaformacao.agenda.model.entities.Address;
+import br.com.cast.turmaformacao.agenda.model.entities.Agenda;
 
 public class AddressService {
 
@@ -18,8 +18,8 @@ public class AddressService {
         super();
     }
 
-    public static Address getAddressByCep(String zipCode){
-        Address address = null;
+    public static Agenda getAddressByCep(String zipCode){
+        Agenda agenda = null;
 
         try {
             java.net.URL url = new URL(URL + zipCode);
@@ -33,14 +33,14 @@ public class AddressService {
                 InputStream inputStream = conn.getInputStream();
 
                 ObjectMapper objectMapper = new ObjectMapper();
-                address = objectMapper.readValue(inputStream, Address.class);
+                agenda = objectMapper.readValue(inputStream, Agenda.class);
 
             }
 
         } catch (Exception e) {
             Log.e(AddressService.class.getName(), "" + e.getMessage());
         }
-        return address;
+        return agenda;
     }
 
 

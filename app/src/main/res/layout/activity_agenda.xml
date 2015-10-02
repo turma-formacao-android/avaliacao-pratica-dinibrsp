@@ -12,6 +12,33 @@
         android:gravity="left|center"
         android:hint="@string/lbl_name"
         />
+
+    <EditText
+        android:id="@+id/editTextTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:inputType="number"
+        android:hint="@string/lbl_tel"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:hint="@string/lbl_mail"
+        />
+
+    <EditText
+        android:id="@+id/editTextSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:hint="@string/lbl_social"
+        />
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -35,30 +62,38 @@
         />
 </LinearLayout>
 
-
     <EditText
-        android:id="@+id/editTextTel"
+        android:id="@+id/editTextRua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left|center"
-        android:hint="@string/lbl_tel"
+        android:hint="@string/lbl_street"
         />
 
     <EditText
-        android:id="@+id/editTextMail"
+        android:id="@+id/editTextBairro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left|center"
-        android:hint="@string/lbl_mail"
+        android:hint="@string/lbl_neighborhood"
         />
 
     <EditText
-        android:id="@+id/editTextSocial"
+        android:id="@+id/editTextCidade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left|center"
-        android:hint="@string/lbl_social"
+        android:hint="@string/lbl_city"
         />
+
+    <EditText
+        android:id="@+id/editTextEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:hint="@string/lbl_state"
+        />
+
 
 
 </LinearLayout>

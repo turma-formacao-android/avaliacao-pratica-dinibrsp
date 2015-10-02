@@ -12,4 +12,25 @@
     <string name="lbl_save">Save</string>
     <string name="lbl_cep">Zip code</string>
     <string name="lbl_check">Check Zip code</string>
+    <string name="lbl_filter">Filter</string>
+
+    <string name="lbl_street">Street</string>
+    <string name="lbl_neighborhood">Neighborhood</string>
+    <string name="lbl_city">City</string>
+    <string name="lbl_state">State</string>
+
+    <string name="not_found">ZIP Code not found!</string>
+    <string name="msg_required">Required field</string>
+    <string name="msg_save_success">Saved</string>
+
+    <string name="lbl_confirm">Delete</string>
+    <string name="msg_delete">Sure?</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_no">No</string>
+
+    <string name="msg_delete_success">Deleted</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_delete">Delete</string>
+    <string name="lbl_filtro">Filter</string>
+    <string name="lbl_add">Add</string>
 </resources>

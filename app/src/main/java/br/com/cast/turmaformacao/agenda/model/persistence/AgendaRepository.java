@@ -7,11 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.List;
 
 import br.com.cast.turmaformacao.agenda.model.entities.Agenda;
-
-
-public final class AgendaReposiroty {
-
-    private AgendaReposiroty(){
+public final class AgendaRepository {
+    private AgendaRepository(){
         super();
     }
 
@@ -70,5 +67,21 @@ public final class AgendaReposiroty {
         db.close();
         databaseHelper.close();
         return values;
+    }
+
+
+    public static Agenda getId(Long id) {
+        DatabaseHelper databaseHelper = DatabaseHelper.getInstance();
+        SQLiteDatabase db = databaseHelper.getReadableDatabase();
+
+        String where = AgendaContract.ID + " = ?";
+        String[] params = {String.valueOf(id)};
+
+        Cursor cursor = db.query(AgendaContract.TABLE, AgendaContract.COLUNS, where, params, null, null, AgendaContract.ID);
+        Agenda agenda = AgendaContract.getAgenda(cursor);
+        db.close();
+        databaseHelper.close();
+
+        return agenda;
     }
 }
