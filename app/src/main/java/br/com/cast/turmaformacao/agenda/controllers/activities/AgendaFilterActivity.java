@@ -80,9 +80,6 @@ public class AgendaFilterActivity extends AppCompatActivity {
         super.onCreateContextMenu(menu, v, menuInfo);
     }
 
-
-
-
     private void updateAgendaList() {
         Agenda agendaFiltro = new Agenda();
 
